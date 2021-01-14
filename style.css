@@ -1,0 +1,135 @@
+/* Browser styling reset, as done by Laurens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar */
+.navigation {
+    background: black;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.navigation-list-item {
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    list-style: none;
+}
+.navigation-list-item > a {
+    color: black;
+    padding: .65em 1em;
+    display: block;
+    /* text-decoration: none; Adds lines to links in navigation*/
+}
+.navigation-list-item > a:hover {
+    color: grey;
+}
+
+html {
+    height: 100%;
+}
+
+/* Default page content styling */
+body {
+    background: black;
+    color: white;
+    font-family: Helvetica;
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
+    justify-content: space-between;
+}
+
+.header-text {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.main-content {
+    text-align: center;
+    padding: 100px 100px 50px 100px;
+}
+
+
+.main-content ul {
+    padding: 1em;
+    text-align: left;
+    margin: 0 auto;
+    width: 50%; /* list content is having a strange issue not aligning dead-center. Should fix */
+}
+.main-content li {
+    padding: .4em;
+}
+
+.info-text {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 25px 100px 25px 100px;
+    font-size: 18px;
+}
+footer {
+    background: black;
+    color: black;
+    text-align: left center;
+    padding: 10px 10px ;
+}
+
+/* Home page */
+.buttons {
+    text-align: center;
+    padding: 25px;
+}
+
+.spotify {
+    text-align: center;
+    padding: 25px;
+}
+
+/* Music page */
+.music-use {
+    display: flex;
+    flex-direction: column;
+}
+.ordered-list-item {
+    background: black;
+    color: white;
+    font-size: 18px
+}
+.info-text > p > a {
+    color: white;
+}
+
+.info-text > p > a:hover {
+    color: grey;
+}
+.ordered-list-item > a {
+    /* redundant code, should be an easier way to apply this */
+    color: white;
+}
+.ordered-list-item > a:hover {
+    /* redundant code, should be an easier way to apply this */
+    color: grey;
+}
+
+/* Tutoring page */
+.info-text > a {
+    color: white;
+}
+.info-text > a:hover {
+    color: grey;
+}
+.tutorial {
+    text-align: center;
+}
+
+/* Contact page */
+.profile-picture {
+    margin-top: -275px;
+    border-radius: 50%;
+}
